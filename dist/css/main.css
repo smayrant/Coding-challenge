@@ -1,9 +1,107 @@
-.logo {
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.center {
+  text-align: center; }
+
+p {
+  line-height: 1.95; }
+
+h2 {
+  text-align: center; }
+
+h2,
+h3 {
+  font-weight: 300;
+  color: #00945f; }
+
+.text-details {
+  color: #a8a8a8; }
+
+.main-header-hr {
+  border: none;
+  width: 75px;
+  background-color: #00945f;
+  color: #00945f;
+  height: 2px; }
+
+#logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   padding: 1em; }
+
+.view-careers-btn {
+  color: #fff;
+  background-color: #e97300;
+  font-size: 20px;
+  border: none;
+  padding: 8px 20px;
+  margin: 1em;
+  transition: .3s;
+  cursor: pointer; }
+
+.view-careers-btn:hover {
+  background-color: #d06600; }
+
+#learn-more-link {
+  color: #759b24;
+  text-decoration: none;
+  transition: .3s; }
+
+#learn-more-link:hover {
+  text-decoration: underline;
+  color: #8ebc2c; }
+
+.citizens-advantage-hr {
+  border: none;
+  color: #c2c2c2;
+  background-color: #c2c2c2;
+  height: 1.25px;
+  margin: 1.5em 0; }
+
+#home-loan-title-container {
+  background-color: #00945f;
+  margin-bottom: 0; }
+
+#home-loan-title {
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-bottom: 0; }
+
+#home-loan-summary-container {
+  margin-top: 0;
+  background-color: #ebf7f5;
+  padding: 1em; }
+
+.quote-container {
+  text-align: center; }
+
+.quote-text-container {
+  position: relative; }
+  .quote-text-container #quote {
+    position: absolute;
+    left: 60px;
+    top: 4px;
+    z-index: -20; }
+  .quote-text-container #employee-details {
+    color: #00945f;
+    max-width: 180px;
+    margin: 0 auto;
+    line-height: 1.7;
+    margin-top: 1em; }
+
+#quote-text {
+  color: #666666;
+  max-width: 180px;
+  margin: 0 auto;
+  font-style: italic; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 * {
@@ -46,8 +144,6 @@ h1 {
  */
 hr {
   box-sizing: content-box;
-  /* 1 */
-  height: 0;
   /* 1 */
   overflow: visible;
   /* 2 */ }

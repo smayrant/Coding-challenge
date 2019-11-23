@@ -1,0 +1,29 @@
+.quote-container{
+    text-align: center;
+}
+
+.quote-text-container{
+    position: relative;
+
+    #quote{
+        position: absolute;
+        left: 60px;
+        top: 4px;
+        z-index: -20;
+    }
+
+    #employee-details{
+        color: $primary-green;
+        max-width: 180px;
+        margin: 0 auto;
+        line-height: 1.7;
+        margin-top: 1em;
+    }
+}
+
+#quote-text{
+    color: $quote-text;
+    max-width: 180px;
+    margin: 0 auto;
+    font-style: italic;
+}

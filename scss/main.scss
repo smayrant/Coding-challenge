@@ -1,5 +1,10 @@
 @import './config';
+@import './global';
 @import './header';
+@import './invest-in-you';
+@import './citizens-advantage';
+@import './home-loan';
+@import './employee-quotes';
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 * {
@@ -50,7 +55,6 @@ h1 {
 
 hr {
 	box-sizing: content-box; /* 1 */
-	height: 0; /* 1 */
 	overflow: visible; /* 2 */
 }
 

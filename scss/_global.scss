@@ -1,0 +1,39 @@
+// Global stylings for multiple elements within the page
+
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 960px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+p {
+	line-height: 1.95;
+}
+
+h2 {
+	text-align: center;
+}
+
+h2,
+h3 {
+	font-weight: 300;
+	color: $primary-green;
+}
+
+.text-details {
+	color: $primary-text;
+}
+
+.main-header-hr {
+	border: none;
+	width: 75px;
+	background-color: $primary-green;
+	color: $primary-green;
+	height: 2px;
+}
