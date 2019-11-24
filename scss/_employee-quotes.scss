@@ -1,3 +1,11 @@
+#main-quote-container{
+    display: grid;
+
+    @media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+}
+
 .quote-container{
     text-align: center;
     margin-bottom: 2em;
@@ -5,6 +13,10 @@
 
 .quote-container:last-child{
     margin-bottom: 4em;
+
+    @media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
 }
 
 .quote-text-container{
@@ -12,14 +24,14 @@
     max-width: 180px;
     margin: 0 auto;
 
-    #quote{
+    .quote{
         position: absolute;
         left: -4px;
         top: 4px;
         z-index: -20;
     }
 
-    #employee-details{
+    .employee-details{
         color: $primary-green;
         max-width: 180px;
         line-height: 1.7;
@@ -27,8 +39,21 @@
     }
 }
 
-#quote-text{
+.quote-text-container:nth-child(2){
+        max-width: 350px;
+}
+
+
+.quote-text{
     color: $grey-text;
     margin: 0 auto;
     font-style: italic;
+
+    @media screen and (min-width: 768px) {
+		height: 188px;
+	}
+}
+
+#middle-quote-text{
+    line-height: 1.688;
 }

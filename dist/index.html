@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Citizens Bank | Personal & Business Banking, Student Loans, & Retirement</title>
 </head>
 <body>
     <header>
-        <div>
+        <picture>
+            <source media="(min-width: 600px)" srcset="./images/logo-lg.jpg">
             <img src="./images/logo.jpg" alt="Logo" id="logo">
-        </div>
+        </picture>
     </header>
     <section>
-        <div>
-            <img src="./images/Layer 50.jpg" alt="Header Image">
-        </div>
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/Hero-img-lg.jpg">
+            <source media="(min-width: 400px)" srcset="./images/Hero-img-md.jpg">
+            <source media="(max-width: 320px)" srcset="./images/Hero-img-sm.jpg">
+            <img src="./images/Hero-img-sm.jpg" alt="Smiling Bank Employee" id="hero-img">
+        </picture>
     </section>
     <main class="wrapper">
         <section>
@@ -41,6 +46,7 @@
                     </p>
                     <a id="learn-more-link" href="#">Learn more about our products. ></a>
                     <hr class="citizens-advantage-hr">
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="citizens-advantage-individual-container">
                     <h3 class="citizens-advantage-heading">Exceptional Support</h3>
@@ -55,6 +61,7 @@
                     <p class="text-details">We expanded our regional operations centers to help to support you and take care of paperwork during closing time. Our one-team "pod" operations approach helps you create satisfied customers and referral sources.
                     </p>
                     <hr class="citizens-advantage-hr">
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="citizens-advantage-individual-container">
                     <h3 class="citizens-advantage-heading">You'll have a voice</h3>
@@ -73,32 +80,34 @@
             </div>
         </section>
         <section>
-            <div class="quote-container">
-                <img src="./images/Ellipse 1.jpg" alt="Employee Image">
-                <div class="quote-text-container">
-                    <img id="quote" src="./images/quotes.jpg" alt="Background Quote">
-                    <p id="quote-text"><q>Citizens Bank is in a growth mode. We're planning to be around for the long term and we're proving that by growing sales.</q> 
-                    </p>
-                    <p id="employee-details">- Ed, Mortgage Loan Officer in Buffalo</p>
+            <div id="main-quote-container">
+                <div class="quote-container">
+                    <img src="./images/Ellipse 1.jpg" alt="Employee Image">
+                    <div class="quote-text-container">
+                        <img class="quote" src="./images/quotes.jpg" alt="Background Quote">
+                        <p class="quote-text"><q>Citizens Bank is in a growth mode. We're planning to be around for the long term and we're proving that by growing sales.</q> 
+                        </p>
+                        <p class="employee-details">- Ed, Mortgage Loan Officer in Buffalo</p>
+                    </div>
                 </div>
-            </div>
-            <div class="quote-container">
-                <img src="./images/Ellipse 2.jpg" alt="Employee Image">
-                <div class="quote-text-container">
-                    <img id="quote" src="./images/quotes.jpg" alt="Background Quote">
-                    <p id="quote-text"><q>The senior management is very committed to the mortgage lending business on every level – from the top, down. We’re all going in the same direction and that’s what I like. So, if I have a question or idea, I can get answers. They listen and we get things done. They are really investing to grow the mortgage business. </q> 
-                    </p>
-                    <p id="employee-details">- Mark, Senior Mortgage Loan Officer in Chicago</p>
+                <div class="quote-container">
+                    <img src="./images/Ellipse 2.jpg" alt="Employee Image">
+                    <div class="quote-text-container">
+                        <img class="quote" src="./images/quotes.jpg" alt="Background Quote">
+                        <p id="middle-quote-text" class="quote-text"><q>The senior management is very committed to the mortgage lending business on every level – from the top, down. We’re all going in the same direction and that’s what I like. So, if I have a question or idea, I can get answers. They listen and we get things done. They are really investing to grow the mortgage business. </q> 
+                        </p>
+                        <p class="employee-details">- Mark, Senior Mortgage Loan Officer in Chicago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="quote-container">
-                <img src="./images/Ellipse 3.jpg" alt="Employee Image">
-                <div class="quote-text-container">
-                    <img id="quote" src="./images/quotes.jpg" alt="Background Quote">
-                    <p id="quote-text"><q>It is so great to be part of an organization that is looking for solutions and creativity versus creating barriers that cause 
-                    problems. </q> 
-                    </p>
-                    <p id="employee-details">- John, Mortgage Loan Officer in Charleston</p>
+                <div class="quote-container">
+                    <img src="./images/Ellipse 3.jpg" alt="Employee Image">
+                    <div class="quote-text-container">
+                        <img class="quote" src="./images/quotes.jpg" alt="Background Quote">
+                        <p class="quote-text"><q>It is so great to be part of an organization that is looking for solutions and creativity versus creating barriers that cause 
+                            problems. </q> 
+                        </p>
+                        <p class="employee-details">- John, Mortgage Loan Officer in Charleston</p>
+                    </div>
                 </div>
             </div>
         </section>
