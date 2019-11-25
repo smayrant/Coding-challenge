@@ -2,8 +2,8 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 980px;
-  padding-right: 12px;
-  padding-left: 12px; }
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .center {
   text-align: center; }
@@ -11,11 +11,11 @@
 p {
   line-height: 1.95; }
 
-h2 {
+h1 {
   text-align: center; }
 
-h2,
-h3 {
+h1,
+h2 {
   font-weight: 300;
   color: #00945f; }
 
@@ -31,27 +31,25 @@ h3 {
 
 #logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   height: auto;
-  padding: 1em;
-  max-width: 180px; }
+  margin: 1.5em auto;
+  max-width: 175px; }
   @media screen and (min-width: 600px) {
     #logo {
       max-width: 250px; } }
   @media screen and (min-width: 768px) {
     #logo {
-      max-width: 300px;
-      margin: 0; } }
+      max-width: 280px;
+      margin-left: 0; } }
   @media screen and (min-width: 992px) {
     #logo {
-      max-width: 330px; } }
+      max-width: 320px; } }
 
 #hero-img {
   width: 100%;
   height: auto;
-  max-width: 1024px;
+  max-width: 980px;
   margin: 0 auto;
   display: block; }
 
@@ -60,7 +58,7 @@ h3 {
   background-color: #e97300;
   font-size: 20px;
   border: none;
-  padding: 8px 20px;
+  padding: 10px 20px;
   margin: 1em;
   transition: .3s;
   cursor: pointer; }
@@ -72,14 +70,13 @@ h3 {
   display: grid; }
   @media screen and (min-width: 768px) {
     #citizens-advantage-main-container {
-      grid-template-columns: repeat(2, 50%); } }
+      grid-template-columns: 50% 50%; } }
 
 .citizens-advantage-individual-container .vertical-line {
   display: none; }
 
 @media screen and (min-width: 768px) {
   .citizens-advantage-individual-container {
-    grid-template-columns: repeat(2, 50%);
     position: relative; }
     .citizens-advantage-individual-container .vertical-line {
       position: absolute;
@@ -87,15 +84,15 @@ h3 {
       top: 20%;
       display: block;
       border-right: 1px solid black;
-      height: 70%; } }
-
-@media screen and (min-width: 768px) {
-  .citizens-advantage-individual-container:nth-child(even) {
-    padding-left: 1.85em; } }
+      height: 130px; } }
 
 @media screen and (min-width: 768px) {
   .citizens-advantage-individual-container:nth-child(odd) {
-    padding-right: 1.85em; } }
+    margin-right: .5em; } }
+
+@media screen and (min-width: 768px) {
+  .citizens-advantage-individual-container:nth-child(even) {
+    margin-left: .8em; } }
 
 @media screen and (min-width: 768px) {
   .citizens-advantage-individual-container:nth-last-of-type(-n+2) {
@@ -115,7 +112,7 @@ h3 {
   color: #c2c2c2;
   background-color: #c2c2c2;
   height: 1.25px;
-  margin: 1.5em 0; }
+  margin: 1em 0; }
   @media screen and (min-width: 768px) {
     .citizens-advantage-hr {
       display: none; } }
@@ -127,7 +124,7 @@ h3 {
 #home-loan-title {
   color: #fff;
   text-align: center;
-  padding: 1em 0;
+  padding: 1em .5em;
   margin-bottom: 0; }
 
 #home-loan-summary-container {
@@ -139,7 +136,8 @@ h3 {
   display: grid; }
   @media screen and (min-width: 768px) {
     #main-quote-container {
-      grid-template-columns: 1fr 3fr 1fr; } }
+      grid-template-columns: 1fr 3fr 1fr;
+      margin-top: 3em; } }
 
 .quote-container {
   text-align: center;
@@ -154,31 +152,41 @@ h3 {
 .quote-text-container {
   position: relative;
   max-width: 180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .quote-text-container .quote {
     position: absolute;
-    left: -4px;
+    left: -10px;
     top: 4px;
     z-index: -20; }
   .quote-text-container .employee-details {
     color: #00945f;
     max-width: 180px;
     line-height: 1.7;
-    margin-top: 1em; }
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .quote-text-container .employee-details {
+        margin-top: 1em; } }
 
-.quote-text-container:nth-child(2) {
-  max-width: 350px; }
+@media screen and (min-width: 768px) {
+  #middle-quote-text-container {
+    max-width: 340px; } }
 
 .quote-text {
   color: #666666;
   margin: 0 auto;
-  font-style: italic; }
+  font-style: italic;
+  max-width: 180px; }
   @media screen and (min-width: 768px) {
     .quote-text {
       height: 188px; } }
 
 #middle-quote-text {
-  line-height: 1.688; }
+  line-height: 1.68; }
+  @media screen and (min-width: 768px) {
+    #middle-quote-text {
+      max-width: 350px; } }
 
 #footer-hr {
   border: none;
@@ -187,7 +195,7 @@ h3 {
   height: 1.3px; }
 
 #footer-icon-container {
-  margin-top: 2em; }
+  margin: 1.5em 0; }
   #footer-icon-container a {
     text-decoration: none; }
 
@@ -210,6 +218,8 @@ h3 {
   #privacy-statement-site-map a {
     color: #000;
     text-decoration: none; }
+  #privacy-statement-site-map span {
+    margin: 0 .25em; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 * {

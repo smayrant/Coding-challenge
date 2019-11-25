@@ -2,7 +2,7 @@
 	display: grid;
 
 	@media screen and (min-width: 768px) {
-		grid-template-columns: repeat(2, 50%)
+		grid-template-columns: 50% 50%;
 	}
 }
 
@@ -11,7 +11,6 @@
 		display: none;
 	}
 	@media screen and (min-width: 768px) {
-		grid-template-columns: repeat(2, 50%);
 		position: relative;
 
 		.vertical-line{
@@ -20,20 +19,20 @@
 			top: 20%;
 			display: block;
 			border-right: 1px solid black;
-			height: 70%;
+			height: 130px;
 		}
-	}
-}
-
-.citizens-advantage-individual-container:nth-child(even){
-	@media screen and (min-width: 768px) {
-		padding-left: 1.85em;
 	}
 }
 
 .citizens-advantage-individual-container:nth-child(odd){
 	@media screen and (min-width: 768px) {
-		padding-right: 1.85em;
+		margin-right: .5em;
+	}
+}
+
+.citizens-advantage-individual-container:nth-child(even){
+	@media screen and (min-width: 768px) {
+		margin-left: .8em;
 	}
 }
 
@@ -59,7 +58,7 @@
 	color: #c2c2c2;
 	background-color: #c2c2c2;
 	height: 1.25px;
-	margin: 1.5em 0;
+	margin: 1em 0;
 
 	@media screen and (min-width: 768px) {
 		display: none;

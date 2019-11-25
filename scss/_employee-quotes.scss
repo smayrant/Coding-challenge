@@ -1,59 +1,73 @@
-#main-quote-container{
-    display: grid;
+#main-quote-container {
+	display: grid;
 
-    @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		grid-template-columns: 1fr 3fr 1fr;
+		margin-top: 3em;
 	}
 }
 
-.quote-container{
-    text-align: center;
-    margin-bottom: 2em;
+.quote-container {
+	text-align: center;
+	margin-bottom: 2em;
 }
 
-.quote-container:last-child{
-    margin-bottom: 4em;
+.quote-container:last-child {
+	margin-bottom: 4em;
 
-    @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		margin-bottom: 0;
 	}
 }
 
-.quote-text-container{
-    position: relative;
-    max-width: 180px;
-    margin: 0 auto;
+.quote-text-container {
+	position: relative;
+	max-width: 180px;
+	margin: 0 auto;
+	text-align: center;
 
-    .quote{
-        position: absolute;
-        left: -4px;
-        top: 4px;
-        z-index: -20;
-    }
+	.quote {
+		position: absolute;
+		left: -10px;
+		top: 4px;
+		z-index: -20;
+	}
 
-    .employee-details{
-        color: $primary-green;
-        max-width: 180px;
-        line-height: 1.7;
-        margin-top: 1em;
-    }
+	.employee-details {
+		color: $primary-green;
+		max-width: 180px;
+		line-height: 1.7;
+		margin: 0 auto;
+		text-align: center;
+
+
+	@media screen and (min-width: 768px) {
+		margin-top: 1em;
+	}
+	}
 }
 
-.quote-text-container:nth-child(2){
-        max-width: 350px;
+#middle-quote-text-container {
+	@media screen and (min-width: 768px) {
+		max-width: 340px;
+	}
 }
 
+.quote-text {
+	color: $grey-text;
+	margin: 0 auto;
+	font-style: italic;
+	max-width: 180px;
 
-.quote-text{
-    color: $grey-text;
-    margin: 0 auto;
-    font-style: italic;
-
-    @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		height: 188px;
 	}
 }
 
-#middle-quote-text{
-    line-height: 1.688;
+#middle-quote-text {
+	line-height: 1.68;
+
+	@media screen and (min-width: 768px) {
+		max-width: 350px;
+	}
 }
